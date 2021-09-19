@@ -153,9 +153,21 @@ div.box:hover{
     color: red;
 }
 
-
-
-
 .score{
-    display: block;
+    display: flex;
+    padding-top: 30px;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.player1{
+    padding: 15px;
+}
+.ties{
+    padding: 15px;
+    padding-right: 30px;
+}
+.player2{
+    padding: 15px;
 }
