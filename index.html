@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div id="container">
+            <a class="logo" href="#">
+                <img src="logo.png" alt="logo" width="30" height="30">
+            </a>
+            <span class="tag">
+                <span class="t">T</span>ic
+                <span class="t">T</span>ac
+                <span class="t">T</span>oe
+            </span>
+        </div>
+    </nav>
+    <div class="game" >
+        <div class="status">x's turn</div>
+
+        <div class = "board">
+            <div class="board-grid">
+                <div class="box" id="top_left"></div>
+                <div class="box" id="top"></div>
+                <div class="box" id="top_right"></div>
+                <div class="box" id="left"></div>
+                <div class="box" id="mid"></div>
+                <div class="box" id="right"></div>
+                <div class="box" id="bot_left"></div>
+                <div class="box" id="bot"></div>
+                <div class="box" id="bot_right"></div>
+            </div>
+        </div>
+
+        <div class="score">
+            <!-- <div class="swap" tabindex="0">
+                <img src="p.png" alt="" width="20" height="20">
+                <p class="p1"></p>
+                <p class="p2"></p>
+            </div> -->
+
+            <span class="player1">
+                <span class="player">Player 1</span>
+                (
+                <span class=""></span>
+                )
+                <span class="score" id="p1">0</span>
+            </span>
+            <span class="ties">Tie
+                <span class="score" id="tie">0</span>
+            </span>
+            <span class="player2">
+                <span class="player">Player 2</span>
+                (
+                <span class=""></span>
+                )
+                <span class="score" id="p2">0</span>
+            </span>
+
+        </div>
+        <div class="reset">Reset</div>
+    </div>
+    
+    <script src="main.js" type="module"></script>
+</body>
+</html>

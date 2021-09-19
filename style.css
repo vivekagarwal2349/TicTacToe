@@ -1,0 +1,161 @@
+html{
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("bg.jpg");
+    box-sizing: border-box;;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+.navbar{
+    background-color: black;
+    padding: 20px;
+    
+}
+.tag{
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    padding-left: 10px;
+}
+.t{
+    color: red;
+    font-size: 40px;
+}
+.game{
+    background-color: black;
+    align-self: center;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.board{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    /* align-items: center; */
+}
+.board-grid{
+    /* align-items : center; */
+    border: none;
+    display: grid;
+    grid-gap: 0px;
+    padding-top: 10%;
+    grid-template-rows: repeat(3, 70px);
+    grid-template-columns: repeat(3,70px);
+    margin:0
+}
+.box{
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+    height: 70px;
+    width: 70px;
+    background-color: black;
+}
+div.box:hover{
+    background-color:rgb(36, 36, 36);
+}
+#top_left{
+    border-left-color: black;
+    border-top-color: black;
+}
+#top{
+    border-top-color: black;
+}
+#top_right{
+    border-top-color: black;
+    border-right-color: black;
+}
+#left{
+    border-left-color: black;
+}
+#right{
+    border-right-color: black;
+}
+#bot_left{
+    border-left-color: black;
+    border-bottom-color: black;
+}
+#bot{
+    border-bottom-color: black;
+}
+#bot_right{
+    border-bottom-color: black;
+    border-right-color: black;
+}
+.swap{
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: dimgray;
+    font-weight: 10px;
+}
+.player1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: dimgray;
+}
+.ties{
+    font-family: Arial, Helvetica, sans-serif;
+    color: dimgray;
+}
+.player2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: dimgray;
+}
+.reset{
+    font-family: Arial, Helvetica, sans-serif;
+    color: dimgray;
+    align-self: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.reset:hover{
+    color: white;
+}
+.status{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(197, 197, 197);
+    align-self: center;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.x,.o{
+    cursor: default;
+}
+
+.x::after{
+    content: 'X';
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    
+}
+.o::after{
+    content: 'O';
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    
+}
+
+.won::after{
+    color: red;
+}
+
+
+
+
+.score{
+    display: block;
+}
