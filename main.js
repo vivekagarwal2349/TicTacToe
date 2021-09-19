@@ -1,10 +1,8 @@
 const statusDiv = document.querySelector('.status');
 const resetDiv = document.querySelector('.reset');
 const cellDivs = document.querySelectorAll('.box');
-const p1_score = document.querySelectorAll('.p1')
-var tie_score = document.querySelectorAll('.tie')
-const p2_score = document.querySelectorAll('.p2')
-console.log(tie_score.innerText)
+var index=0;
+console.log(index)
 // game constants
 const xSymbol = '×';
 const oSymbol = '○';
@@ -118,7 +116,16 @@ const handleWin = (letter) => {
       cellDiv.classList.remove('o');
       cellDiv.classList.remove('won');
     }
+    index+=1;
     gameIsLive = true;
+    if (index%2){
+      document.getElementById("xop1").innerText="O";
+      document.getElementById("xop2").innerText="X";
+    }
+    else{
+      document.getElementById("xop1").innerText="X";
+      document.getElementById("xop2").innerText="O";
+    }
   };
   
   const handleCellClick = (e) => {
